@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+var m1,m2,m3;
+m1=parseInt(prompt("enter mark of funda "));
+m2=parseInt(prompt("enter mark of c lang "));
+m3=parseInt(prompt("enter mark of html "));
+total=calculate(m1,m2,m3);
+document.write("Total of marks="+total+"<br>");
+var per=total/3;
+document.write("percentage="+per);
+
+	
+function calculate(a,b,c)
+	{
+		var tot=0;
+		tot=a+b+c;
+		return tot;
+	}
+</script>
+</head>
+<body>
+</body>
+</html>

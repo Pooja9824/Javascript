@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function check(txt)
+	{
+		if(txt.value=="")
+			{
+				alert("Please enter proper value");
+				txt.focus();
+			}
+	}
+</script>	
+</head>
+<body>
+<h3>Validation programe</h3>
+<label>Enter name:</label><input type="text" id="name" onBlur="check(this)" required><br>
+<label>Enter sirname:</label><input type="text" id="sirname" onBlur="check(this)" required><br>
+<input type="submit" name="save" value="Display">
+</body>
+</html>

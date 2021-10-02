@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript">
+function display()
+	{
+		var a=document.getElementById("val2").value;
+		document.getElementById("val2").value=a.toUpperCase();
+	}
+function disp()
+	{
+		document.getElementById("val1").style.backgroundColor="#3F9";
+	}
+function alt()
+	{
+		alert('form has been submitted');
+	}
+</script>	
+</head>
+<body>
+<form method="post" onSubmit="alt()">
+    Enter name:<input type="text" id="val1" onKeyUp="disp()" /><br>
+	Enter sirname:<input type="text" id="val2"  onKeyUp="display()"/><br>
+	fullname:<input type="text" id="result" onSelect="alert('test selected')"/><br>
+<input type="submit" name="save" value="save">
+</form>
+</body>
+</html>

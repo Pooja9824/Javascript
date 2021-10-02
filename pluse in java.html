@@ -1,0 +1,24 @@
+<html>
+<head>
+</head>
+<body>
+<canvas id="canvas"height="300"width="300"style="border :solid #E90003;color:#0606DB"></canvas>
+<script type="text/javascript">
+
+       var canvas = document.getElementById('canvas')
+	   
+	   var context = canvas.getContext("2d")
+		
+	   context.moveTo(0,150);
+		
+	   context.lineTo(300,150);
+	  
+	   context.moveTo(150,0);
+	
+	   context.lineTo(150,300);
+	
+	   context.stroke();
+		
+</script>
+</body>
+</html>

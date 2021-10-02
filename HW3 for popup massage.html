@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+var a,b,c;
+var sum,subtraction,multiplication,devision;
+	
+	a=parseInt(prompt("Enter value of a","10"));
+	c=prompt("Enter any Arithmetic operator","+,-,*,/");
+	b=prompt("Enter value of b","20");
+
+	
+document.write("value of a is="+a+" Arithmetic operator is="+c+" value of b is="+b+"<br>");
+
+if(c=="+")
+   {
+     sum=a+b;
+	 document.write("sum of value is= "+sum+"<br>");
+     document.write("Completed");
+   }
+ else if(c=="-")
+	{
+     subtraction=a-b;
+	 document.write("subtraction of value is= "+subtraction+"<br>");
+     document.write("Completed");
+	}
+ else if(c=="*")
+    {
+	   multiplication=a*b;
+	   document.write("multiplication of value is= "+multiplication+"<br>");
+       document.write("Completed");
+	}
+else if(c=="/")
+	{
+		division=a/b;
+	    document.write("division of value is= "+division+"<br>");
+        document.write("Completed");
+	}
+else
+	{
+		document.write("Enter proper value")
+	}
+</script>	
+</head>
+<body>
+</body>
+</html>  

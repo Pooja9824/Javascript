@@ -1,0 +1,34 @@
+<html>
+<head>
+</head>
+<body>
+<canvas id="smily"height="300"width="300"style="border :solid #F5080C;"></canvas>
+<script type="text/javascript">
+
+       var canvas = document.getElementById("smily")
+	   
+	   var contrast = canvas.getContext("2d")
+		
+	   contrast.beginPath();
+		
+	   contrast.arc(150,150,90,0,Math.PI*2,true);  //main circle
+       contrast.moveTo(200,160);
+	   contrast.arc(150,160,50,0,Math.PI,false);   //mouth
+	   contrast.moveTo(210,110);
+	   contrast.arc(200,110,10,0,Math.PI*2,true);  //right eye
+	   contrast.moveTo(110,110);
+       contrast.arc(100,110,10,0,Math.PI*2,true);  //left eye
+	   contrast.moveTo(107,110);
+       contrast.arc(103,112,5,0,Math.PI*2,false);  //left smalleye
+	   contrast.moveTo(210,113);
+       contrast.arc(203,112,5,0,Math.PI*2,false);  //right smalleye
+	   contrast.moveTo(150,155);
+       contrast.lineTo(150,130);  //nose
+	   contrast.moveTo(150,155);
+       contrast.lineTo(165,155);  //nose
+	   contrast.stroke();
+      
+	   </script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function alpha()
+	{
+		var regexp=/^[a-zA-Z]+$/;
+		if(document.getElementById("name").value.match(regexp))
+			{
+				return true;
+			}
+		else
+			{
+				alert("only characters are allow");
+				document.getElementById("name").value="";
+				document.getElementById("name").focus();
+			return false;
+			}
+	}
+</script>	
+</head>
+<body>
+<form>
+	Enter name:<input type="text" id="name" onKeyUp="validate(this)" onKeyPress="return alp(event)" onChange="alpha()"><br>
+	Enter Number:<input type="text" id="number"><br>
+<input type="submit" name="save" value="save">
+</form>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript">
+function over(e)
+	{
+		var image= document.getElementById("img1");
+		image.src="hetvi 002.jpg";
+		e.style.height="300px";
+		e.style.width="300px";
+	   
+    }
+function out(e)
+	{
+		var image= document.getElementById("img1");
+		image.src="hetvi 003.jpg";  
+		e.style.height="100px";
+		e.style.width="100px";                                  
+	}
+</script>
+</head>
+<body>
+<img src="hetvi 003.jpg"  height="100" width="100" onMouseOver="over(this)"  onMouseOut="out(this)" id="img1">
+</body>
+</html>

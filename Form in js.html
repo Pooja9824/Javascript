@@ -1,0 +1,46 @@
+<html>
+<head>
+<script type="text/javascript">
+function display()
+	{
+		
+		var name=document.getElementById("txt1").value.toUpperCase();
+		var sirnmae=document.getElementById("txt2").value.toUpperCase();
+		var fullname=name+" "+sirnmae;
+		document.getElementById("txt3").value=fullname;
+	}
+function alldata()
+	{
+		var name=document.getElementById("txt1").value.toUpperCase();
+		var sirnmae=document.getElementById("txt2").value.toUpperCase();
+		var fullname=document.getElementById("txt3").value;
+		var addr=document.getElementById("address").value;
+		var mob=document.getElementById("mobile").value;
+		
+		document.getElementById("p1").innerHTML=name+" "+sirnmae+" "+fullname+"<br>"+addr+"<br>
+   "+mob;
+	}
+
+</script>	
+</head>
+<body>
+  
+<center><h3>Registration Form</h3></center>
+	
+<label>Enter Your Name:</label>
+<input type="text" id="txt1"><br>
+<label>Enter Your Sirname:</label>
+<input type="text" id="txt2" onBlur="display()"><br>
+<label>Your Name:</label>
+<input type="text" id="txt3" readonly><br>
+<label>Gender:</label>
+<input type="radio" name="gen" value="Male">Male
+<input type="radio" name="gen" value="Female">Female<br>
+<label>Mobile:</label>
+<input type="number" placeholder="Phone number" id="moblile" size="10" onClick="alert('You should enter 10 digits')"><br>
+<label>Address:</label>
+<textarea cols="5" rows="6" id="address">Address</textarea><br>
+<input type="submit" name="sub" value="Save" onClick="alldata()"><br>
+<p id="p1"></p>
+</body>
+</html>

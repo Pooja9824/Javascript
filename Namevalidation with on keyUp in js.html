@@ -1,0 +1,17 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate(txt)
+	{
+		txt.value=txt.value.replace(/[^a-zA-Z _\n\r]+/g,'');
+	}
+</script>	
+</head>
+<body>
+<form>
+	Enter name:<input type="text" id="name" onKeyUp="validate(this)" onKeyPress="return alp(event)" onChange="alpha()"><br>
+	Enter Number:<input type="text" id="number"><br>
+<input type="submit" name="save" value="save">
+</form>
+</body>
+</html>

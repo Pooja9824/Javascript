@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function display()
+	{
+		var a=document.getElementById("val2").value;
+		document.getElementById("val2").value=a.toUpperCase();
+	}
+function disp()
+	{
+		document.getElementById("val1").style.backgroundColor="#3F9";
+	}
+</script>	
+</head>
+<body>
+    Enter name:<input type="text" id="val1" onKeyUp="disp()"/><br>
+	Enter sirname:<input type="text" id="val2" onKeyUp="display()"/><br>
+	fullname:<input type="text" id="result" readonly/><br>
+
+</body>
+</html>

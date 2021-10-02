@@ -1,0 +1,28 @@
+<html>
+<head>
+<script type="text/javascript">
+function alp(e)
+	{
+		var keyCode=(e.which)?
+			e.which : e.keyCode;
+		
+		if((keyCode==32) || (keyCode>64 && keyCode<91) || (keyCode>96 && keyCode<123))
+			{
+				return true;
+			}
+		else
+			{
+				alert("Only characters are allow");
+				return false;
+			}
+	}
+</script>	
+</head>
+<body>
+<form>
+	Enter name:<input type="text" id="name" onKeyUp="validate(this)" onKeyPress="return alp(event)" onChange="alpha()"><br>
+	Enter Number:<input type="text" id="number"><br>
+<input type="submit" name="save" value="save">
+</form>
+</body>
+</html>
