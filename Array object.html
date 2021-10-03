@@ -1,25 +1,29 @@
 <html>
+
 <body>
-<script type="text/javascript">
-var fruit=new Array("banana","apple","mangoes","grapes");
-var veg=new Array("potato","tomato","bringles","onion");
-var other_array=fruit.concat(veg);
-	document.write("length of array="+fruit.length+"<br>");
-	for(var i=0;i<other_array.length;i++)
-		{
-			document.write(other_array[i]+"<br>");
+	<script type="text/javascript">
+		// define array
+		var fruit = new Array("banana", "apple", "mangoes", "grapes");
+		var veg = new Array("potato", "tomato", "bringles", "onion");
+
+		var other_array = fruit.concat(veg);
+
+		document.write("length of array=" + fruit.length + "<br>");
+		for (var i = 0; i < other_array.length; i++) {
+			document.write(other_array[i] + "<br>");
 		}
-	
-document.write("array join:-"+fruit.join(",")+"<br>");
-document.write(veg.pop()+"<br>");
-document.write("remain array element-"+veg+"<br>");
-document.write(veg.pop()+"<br>");
-document.write("Remain array element="+veg+"<br>");
-document.write(fruit.push("watermelon")+"<br>");
-document.write("New array:-"+fruit+"<br>");
-document.write(fruit.push("pineapple")+"<br>");
-document.write("New array:="+fruit+"<br>");
-document.write("Reverse array="+fruit.reverse()+"<br>");
-</script>	
+
+		document.write("array join:-" + fruit.join(",") + "<br>");
+		document.write(veg.pop() + "<br>");
+		document.write("remain array element-" + veg + "<br>");
+		document.write(veg.pop() + "<br>");
+		document.write("Remain array element=" + veg + "<br>");
+		document.write(fruit.push("watermelon") + "<br>");
+		document.write("New array:-" + fruit + "<br>");
+		document.write(fruit.push("pineapple") + "<br>");
+		document.write("New array:=" + fruit + "<br>");
+		document.write("Reverse array=" + fruit.reverse() + "<br>");
+	</script>
 </body>
+
 </html>
