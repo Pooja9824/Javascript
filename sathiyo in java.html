@@ -1,33 +1,37 @@
 <html>
+
 <head>
+	<title>SWASTIK using Canvas </title>
 </head>
+
 <body>
-<canvas id="canvas"height="300"width="300"style="border :solid #E90003;color:#0606DB"></canvas>
-<script type="text/javascript">
-       var canvas = document.getElementById('canvas')
-	   var context = canvas.getContext("2d")
-		
-	   context.moveTo(150,50);
-	   context.lineTo(150,250);
-	  
-	   context.moveTo(50,150);
-	   context.lineTo(250,150);
-	
-	   context.moveTo(250,50);
-	   context.lineTo(150,50);
-	  
-	   context.moveTo(150,250);
-       context.lineTo(50,250);
-	
-	   context.moveTo(50,150);
-       context.lineTo(50,50);
-	  
-	   context.moveTo(250,250);
-       context.lineTo(250,150);
-	
-	
-	   context.stroke();
-		
-</script>
+	<canvas id="canvas" height="300" width="300" style="border :solid #E90003;color:#0606DB"></canvas>
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas')
+		var context = canvas.getContext("2d")
+
+		context.moveTo(150, 50);
+		context.lineTo(150, 250);
+
+		context.moveTo(50, 150);
+		context.lineTo(250, 150);
+
+		context.moveTo(250, 50);
+		context.lineTo(150, 50);
+
+		context.moveTo(150, 250);
+		context.lineTo(50, 250);
+
+		context.moveTo(50, 150);
+		context.lineTo(50, 50);
+
+		context.moveTo(250, 250);
+		context.lineTo(250, 150);
+
+
+		context.stroke();
+
+	</script>
 </body>
+
 </html>
