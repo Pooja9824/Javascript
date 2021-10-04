@@ -1,0 +1,53 @@
+<html>
+
+<head>
+	<title>Simple Calculation using prompt Box</title>
+</head>
+
+<body>
+	<script>
+		// declareing variable
+		var num1, num2;
+		var operator;
+		var sum, subtraction, multiplication, devision;
+
+		// Input Values
+		num1 = parseInt(prompt("Enter value of 1st Number", "10"));
+		operator = prompt("Enter any Arithmetic operator", "+,-,*,/");
+		num2 = parseInt(prompt("Enter value of 2nd Number", "20"));
+
+		// Display Inputed Values
+		document.write("value of a is=" + num1 + " Arithmetic operator is=" + operator + " value of b is=" + num2 + "<br>");
+
+		// Addition
+		if (operator == "+") {
+			sum = num1 + num2;
+			document.write("sum of value is= " + sum + "<br>");
+			document.write("Completed");
+		}
+		// Substraction
+		else if (operator == "-") {
+			subtraction = num1 - num2;
+			document.write("subtraction of value is= " + subtraction + "<br>");
+			document.write("Completed");
+		}
+		// Multiplication 
+		else if (operator == "*") {
+			multiplication = num1 * num2;
+			document.write("multiplication of value is= " + multiplication + "<br>");
+			document.write("Completed");
+		}
+		// Division
+		else if (operator == "/") {
+			division = num1 / num1;
+			document.write("division of value is= " + division + "<br>");
+			document.write("Completed");
+		}
+		// if you not enter proper value 
+		else {
+			document.write("Enter proper value")
+		}
+	</script>
+</body>
+
+</html>
