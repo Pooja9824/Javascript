@@ -1,0 +1,21 @@
+<html>
+
+<head>
+	<title>Circle in Canvas</title>
+</head>
+
+<body>
+	<canvas id="mycanvas" height="300" width="300" style="border :solid #F5080C;"></canvas>
+	<script>
+
+		var canvas = document.getElementById("mycanvas")
+		var contrast = canvas.getContext("2d")
+		contrast.beginPath();
+		contrast.arc(150, 150, 100, 0, 2 * Math.PI);
+		contrast.stroke();
+
+	</script>
+
+</body>
+
+</html>
