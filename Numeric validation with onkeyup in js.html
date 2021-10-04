@@ -1,13 +1,16 @@
 <html>
+
 <head>
-<script type="text/javascript">
-function validate(mob)
-	{
-		mob.value=mob.value.replace(/[^0-9_\n\r]*/g,'');
-	}
-</script>	
+	<script type="text/javascript">
+		function validate(mob) {
+			mob.value = mob.value.replace(/[^0-9_\n\r]*/g, '');
+		}
+	</script>
 </head>
+
 <body>
-<input type="text" placeholder="Numbers" id="numb" required onKeyPress="return numeric(event)" onKeyUp="validate(this)">
+	<input type="text" placeholder="Numbers" id="numb" required onKeyPress="return numeric(event)"
+		onKeyUp="validate(this)">
 </body>
+
 </html>

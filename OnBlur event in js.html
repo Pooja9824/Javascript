@@ -1,21 +1,23 @@
 <html>
+
 <head>
-<script type="text/javascript">
-function display()
-{
-   var name=document.getElementById("val1").value;
-   var sirname=document.getElementById("val2").value;
-   var fullname=name+" "+sirname;
-	document.getElementById("result").value=fullname;
-}
-</script>	
+	<script type="text/javascript">
+		function display() {
+			var name = document.getElementById("val1").value;
+			var sirname = document.getElementById("val2").value;
+			var fullname = name + " " + sirname;
+			document.getElementById("result").value = fullname;
+		}
+	</script>
 </head>
+
 <body>
 
-	Enter name:<input type="text" id="val1"/><br>
+	Enter name:<input type="text" id="val1" /><br>
 	Enter sirname:<input type="text" id="val2" onBlur="display()" /><br>
-	fullname:<input type="text" id="result" readonly/><br>
-	
+	fullname:<input type="text" id="result" readonly /><br>
+
 
 </body>
+
 </html>

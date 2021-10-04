@@ -1,0 +1,37 @@
+<html>
+
+<head>
+	<title>simple calculator using Switch...case</title>
+</head>
+
+<body>
+	<script>
+		var num1 = parseInt(prompt("Enter Value for 1st Number:"));
+		var num2 = parseInt(prompt("Enter Value for 2st Number:"));
+		var result;
+		var oprtr = prompt("Enter:+,-,*,/");
+		switch (oprtr) {
+			case "+":
+				result = num1 + num2;
+				document.write("sum of value is=" + result);
+				break;
+			case "-":
+				result = num1 - num2;
+				document.write("subtraction=" + result);
+				break;
+			case "*":
+				result = num1 * num2;
+				document.write("multiplication value=" + result);
+				break;
+			case "/":
+				result = num1 * num2;
+				document.write("devision value=" + result);
+				break;
+			default:
+				document.write("please enter proper value");
+				break;
+		}
+	</script>
+</body>
+
+</html>

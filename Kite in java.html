@@ -1,36 +1,40 @@
 <html>
-<head>
-</head>
-<body>
-<canvas id="kite"height="300"width="300"style="border :solid #E90003;color:#0606DB"></canvas>
-<script type="text/javascript">
 
-       var canvas = document.getElementById('kite')
-	   
-	   var context = canvas.getContext("2d")
-		
-		
-	   context.moveTo(50,100);
-	   context.lineTo(150,10); //top first line
-	   context.moveTo(250,110);
-	   context.lineTo(150,10); //top second line
-	   context.moveTo(150,10);
-	   context.lineTo(150,230);//middle line
-	   context.moveTo(50,100);
-	   context.lineTo(150,230);//bottom firstline
-	   context.moveTo(250,110);
-	   context.lineTo(150,230);//bottom secondline
-	   context.moveTo(100,270);
-	   context.lineTo(150,230);//small first line
-	   context.moveTo(200,270);
-	   context.lineTo(150,230);//small secondline
-	   context.moveTo(200,270);
-	   context.lineTo(100,270);//bottom line
-	   context.moveTo(50,100);
-       context.arc(146,175,120,10.1,Math.PI*-0.17,false); //sircle of the kite
-	   context.stroke();
-	
-	 
-</script>
+<head>
+	<title>Kite using Canvas</title>
+</head>
+
+<body>
+	<canvas id="kite" height="300" width="300" style="border :solid #E90003;color:#0606DB"></canvas>
+	<script>
+
+		var canvas = document.getElementById('kite')
+
+		var context = canvas.getContext("2d")
+
+
+		context.moveTo(50, 100);
+		context.lineTo(150, 10); //top first line
+		context.moveTo(250, 110);
+		context.lineTo(150, 10); //top second line
+		context.moveTo(150, 10);
+		context.lineTo(150, 230);//middle line
+		context.moveTo(50, 100);
+		context.lineTo(150, 230);//bottom firstline
+		context.moveTo(250, 110);
+		context.lineTo(150, 230);//bottom secondline
+		context.moveTo(100, 270);
+		context.lineTo(150, 230);//small first line
+		context.moveTo(200, 270);
+		context.lineTo(150, 230);//small secondline
+		context.moveTo(200, 270);
+		context.lineTo(100, 270);//bottom line
+		context.moveTo(50, 100);
+		context.arc(146, 175, 120, 10.1, Math.PI * -0.17, false); //Circle of the kite
+		context.stroke();
+
+
+	</script>
 </body>
+
 </html>

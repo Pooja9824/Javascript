@@ -1,28 +1,30 @@
 <html>
-<head>
-<script type="text/javascript">
-function calculate()
-	{
-		var a=document.getElementById("val1").value;
-		var b=document.getElementById("val2").value;
-		var sum=0;
-		sum=parseInt(a)+parseInt(b);
-		
-		document.getElementById("result").value=sum;
-	}
-</script>	
-</head>
-<body>
-  
-<h3>Onclick event demo</h3>
-	<p>Click on the button when form display</p><br>
-	
-	Enter value A:<input type="text" id="val1"/><br>
-	Enter value B:<input type="text" id="val2"/><br>
-	Result:<input type="text" id="result"/><br>
-	
-<button id="b1" onClick="calculate()">+</button>
 
-	 
+<head>
+	<script type="text/javascript">
+		function calculate() {
+			var a = document.getElementById("val1").value;
+			var b = document.getElementById("val2").value;
+			var sum = 0;
+			sum = parseInt(a) + parseInt(b);
+
+			document.getElementById("result").value = sum;
+		}
+	</script>
+</head>
+
+<body>
+
+	<h3>Onclick event demo</h3>
+	<p>Click on the button when form display</p><br>
+
+	Enter value A:<input type="text" id="val1" /><br>
+	Enter value B:<input type="text" id="val2" /><br>
+	Result:<input type="text" id="result" /><br>
+
+	<button id="b1" onClick="calculate()">+</button>
+
+
 </body>
+
 </html>

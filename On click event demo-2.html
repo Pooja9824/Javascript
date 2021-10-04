@@ -1,27 +1,29 @@
 <html>
+
 <head>
-<script type="text/javascript">
-function display()
-	{
-		var name=document.getElementById("txt1").value;
-		var sirnmae=document.getElementById("txt2").value;
-		var fullname=name+" "+sirnmae;
-		document.getElementById("disp").innerHTML=fullname.toUpperCase();
-		document.getElementById("txt3").value=fullname.toUpperCase();
-	}
-</script>	
+	<script type="text/javascript">
+		function display() {
+			var name = document.getElementById("txt1").value;
+			var sirnmae = document.getElementById("txt2").value;
+			var fullname = name + " " + sirnmae;
+			document.getElementById("disp").innerHTML = fullname.toUpperCase();
+			document.getElementById("txt3").value = fullname.toUpperCase();
+		}
+	</script>
 </head>
+
 <body><br>
-  
-<h3>Onclick event demo</h3>
+
+	<h3>Onclick event demo</h3>
 	<p>Click on the button when form display</p><br>
-	
-	Enter your name:<input type="text" id="txt1"/><br>
-	Enter your sirname:<input type="text" id="txt2"/><br>
-	Fullname:<input type="text" id="txt3"/><br>
-	
-<button id="b1" onClick="display()">click me</button>
-<p id="disp"></p>
-	 
+
+	Enter your name:<input type="text" id="txt1" /><br>
+	Enter your sirname:<input type="text" id="txt2" /><br>
+	Fullname:<input type="text" id="txt3" /><br>
+
+	<button id="b1" onClick="display()">click me</button>
+	<p id="disp"></p>
+
 </body>
+
 </html>

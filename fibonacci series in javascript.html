@@ -1,0 +1,26 @@
+<html>
+
+<head>
+	<title>Fibonacci Series</title>
+</head>
+
+<body>
+	<script>
+		var num1 = 0;
+		var num2 = 1;
+		var sum;
+		var i;
+		var x = 6;
+
+		document.write(num1 + "<br>" + num2 + "<br>");
+
+		for (i = 0; i < x; i++) {
+			sum = num1 + num2;
+			num1 = num2;
+			num2 = sum;
+			document.write(num2 + "<br>");
+		}
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Canvas</title>
+</head>
+
+<body>
+	<canvas id="canvas" height="300" width="300"></canvas>
+	<script>
+		var canvas = document.getElementById('canvas');
+
+		var ctx = canvas.getContext("2d");
+		// 1st Box 
+		ctx.fillStyle = "#F30"
+		ctx.fillRect(15, 15, 130, 130);
+		// 2nd Box 
+		ctx.fillStyle = "#29BC12"
+		ctx.fillRect(155, 15, 130, 130);
+		// 3rd Box
+		ctx.fillStyle = "#1BC8E0"
+		ctx.fillRect(15, 155, 130, 130);
+		// 4th Box 
+		ctx.fillStyle = "#D5FA00"
+		ctx.fillRect(155, 155, 130, 130);
+	</script>
+</body>
+
+</html>

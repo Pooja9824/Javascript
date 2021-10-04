@@ -1,35 +1,36 @@
 <html>
-<body>
-<script type="text/javascript">
-var a,b,c,cal;
-	a=parseInt(prompt("Enter value of a","5"));
-	c=prompt("Enter symbol","+,-,*,/");
-	b=parseInt(prompt("Enter value of b","10"));
 
-	document.write("value are="+a+" "+c+" "+b+"<br>");
-	
-	switch(c)
-		{
-			    case "+":
-				   cal=a+b;
-			       document.write("sum of a and b is="+cal+"<br>");
-				   break;
-			    case "-":
-				   cal=a-b;
-				   document.write("Subtraction of a and b is="+cal+"<br>");
-				   break;
-			    case "*":
-				   cal=a*b;
-				   document.write("Multiplication of a and b is="+cal+"<br>");
-				   break;
-		      	case "/": 
-				   cal=a/b;
-				   document.write("devision of a and b is="+cal+"<br>");
-				   break;
-			    default:
-				   document.write("Enter proper symbol");
-				   break;
+<body>
+	<script type="text/javascript">
+		var a, b, c, cal;
+		a = parseInt(prompt("Enter value of a", "5"));
+		c = prompt("Enter symbol", "+,-,*,/");
+		b = parseInt(prompt("Enter value of b", "10"));
+
+		document.write("value are=" + a + " " + c + " " + b + "<br>");
+
+		switch (c) {
+			case "+":
+				cal = a + b;
+				document.write("sum of a and b is=" + cal + "<br>");
+				break;
+			case "-":
+				cal = a - b;
+				document.write("Subtraction of a and b is=" + cal + "<br>");
+				break;
+			case "*":
+				cal = a * b;
+				document.write("Multiplication of a and b is=" + cal + "<br>");
+				break;
+			case "/":
+				cal = a / b;
+				document.write("devision of a and b is=" + cal + "<br>");
+				break;
+			default:
+				document.write("Enter proper symbol");
+				break;
 		}
-</script>	
+	</script>
 </body>
+
 </html>
