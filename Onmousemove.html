@@ -1,25 +1,26 @@
 <html>
+
 <head>
-<style type="text/css">
-div
-{
-   border:#090DCF 1px solid;
-   height:"200px";
-   width:"200px";
-}
-</style>
+	<style type="text/css">
+		div {
+			border: #090DCF 1px solid;
+			height: "200px";
+			width: "200px";
+		}
+	</style>
 </head>
+
 <body>
-<div id="mydiv" onMouseMove="scale(event)"></div>
-<p id="demo"></p>
-<script type="text/javascript">
-function scale(e)
-	{
-		var x=e.clientX;
-		var y=e.clientY;
-		var coord="coordinates:("+x+","+y+")";
-		document.getElementById("demo").innerHTML=coord;
-	}
-</script>
+	<div id="mydiv" onMouseMove="scale(event)"></div>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		function scale(e) {
+			var x = e.clientX;
+			var y = e.clientY;
+			var coord = "coordinates:(" + x + "," + y + ")";
+			document.getElementById("demo").innerHTML = coord;
+		}
+	</script>
 </body>
+
 </html>

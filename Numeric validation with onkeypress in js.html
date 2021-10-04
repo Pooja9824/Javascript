@@ -1,19 +1,21 @@
 <html>
+
 <head>
-<script type="text/javascript">
-function numeric(e)
-	{
-		var keyCode=(e.which)?e.which:e.keyCode;
-		if(keyCode != 46 && keyCode > 31 && (keyCode < 48 || keyCode > 57))
-			{
+	<script type="text/javascript">
+		function numeric(e) {
+			var keyCode = (e.which) ? e.which : e.keyCode;
+			if (keyCode != 46 && keyCode > 31 && (keyCode < 48 || keyCode > 57)) {
 				alert("only Numbers");
 				return false;
 			}
-		return true;
-	}
-</script>	
+			return true;
+		}
+	</script>
 </head>
+
 <body>
-<input type="text" placeholder="Numbers" id="numb" required onKeyPress="return numeric(event)" onKeyUp="validate(this)">
+	<input type="text" placeholder="Numbers" id="numb" required onKeyPress="return numeric(event)"
+		onKeyUp="validate(this)">
 </body>
+
 </html>

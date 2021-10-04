@@ -1,56 +1,55 @@
 <html>
+
 <head>
-<script type="text/javascript">
-function addition()
-	{
-		var a=document.getElementById("val1").value;
-		var b=document.getElementById("val2").value;
-		
-		var sum=0;
-		sum=parseInt(a)+parseInt(b);
-		document.getElementById("result").value=sum;
-	}
-function subtract()
-	{
-		var a=document.getElementById("val1").value;
-		var b=document.getElementById("val2").value;
-		
-		var minus=0;
-		minus=parseInt(a)-parseInt(b);
-		document.getElementById("result").value=minus;
-	}
-function multi()
-	{
-		var a=document.getElementById("val1").value;
-		var b=document.getElementById("val2").value;
-		
-		var multi=0;
-		multi=parseInt(a)*parseInt(b);
-		document.getElementById("result").value=multi;
-	}
-function devision()
-	{
-		var a=document.getElementById("val1").value;
-		var b=document.getElementById("val2").value;
-		
-		var devision=0;
-		devision=parseInt(a)/parseInt(b);
-		document.getElementById("result").value=devision;
-	}
-</script>	
+	<script type="text/javascript">
+		function addition() {
+			var a = document.getElementById("val1").value;
+			var b = document.getElementById("val2").value;
+
+			var sum = 0;
+			sum = parseInt(a) + parseInt(b);
+			document.getElementById("result").value = sum;
+		}
+		function subtract() {
+			var a = document.getElementById("val1").value;
+			var b = document.getElementById("val2").value;
+
+			var minus = 0;
+			minus = parseInt(a) - parseInt(b);
+			document.getElementById("result").value = minus;
+		}
+		function multi() {
+			var a = document.getElementById("val1").value;
+			var b = document.getElementById("val2").value;
+
+			var multi = 0;
+			multi = parseInt(a) * parseInt(b);
+			document.getElementById("result").value = multi;
+		}
+		function devision() {
+			var a = document.getElementById("val1").value;
+			var b = document.getElementById("val2").value;
+
+			var devision = 0;
+			devision = parseInt(a) / parseInt(b);
+			document.getElementById("result").value = devision;
+		}
+	</script>
 </head>
+
 <body>
-<h3>Onclick event demo</h3>
+	<h3>Onclick event demo</h3>
 	<p>Click on the button when form display</p><br>
-	
-	Enter value A:<input type="text" id="val1"/><br>
-	Enter value B:<input type="text" id="val2"/><br>
-	Result:<input type="text" id="result"/><br>
-	
-<button id="b1" onClick="addition()">+</button>
-<button id="b2" onClick="subtract()">-</button>
-<button id="b3" onClick="multi()">*</button>
-<button id="b4" onClick="devision()">/</button>
+
+	Enter value A:<input type="text" id="val1" /><br>
+	Enter value B:<input type="text" id="val2" /><br>
+	Result:<input type="text" id="result" /><br>
+
+	<button id="b1" onClick="addition()">+</button>
+	<button id="b2" onClick="subtract()">-</button>
+	<button id="b3" onClick="multi()">*</button>
+	<button id="b4" onClick="devision()">/</button>
 
 </body>
+
 </html>
